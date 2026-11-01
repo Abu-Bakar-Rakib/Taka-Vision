@@ -218,6 +218,7 @@ The packaged model (`best_banknote_model.pth`) contains the complete configurati
 ```text
 BD Note detection/
 ├── .gitignore                 # Git ignore rules for Python, cache, and OS files
+├── .vercelignore              # Excludes Python desktop files from Vercel web build
 ├── LICENSE                    # MIT open-source license
 ├── README.md                  # Comprehensive project documentation
 ├── app.js                     # Mobile web app logic & ONNX Runtime Web inference

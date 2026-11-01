@@ -334,3 +334,4 @@ window.addEventListener('DOMContentLoaded', async () => {
   await startCamera();
   await initModel();
 });
+

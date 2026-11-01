@@ -1,0 +1,10 @@
+# Files to ignore during Vercel deployment
+# Exclude Python desktop files and heavy PyTorch checkpoint so Vercel treats this as a pure static web app:
+requirements.txt
+realtime_detect.py
+export_onnx.py
+best_banknote_model.pth
+*.pth
+*.pt
+__pycache__/
+*.pyc
