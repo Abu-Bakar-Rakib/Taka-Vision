@@ -44,6 +44,13 @@ The system is trained to recognize all **9 active Bangladeshi Taka (BDT)** bankn
 
 ---
 
+## 📊 Dataset
+
+The model is trained on the Bangladeshi banknote dataset available on Kaggle:
+- **Dataset Link**: [CSE475 Group-J Banknote Dataset (Kaggle)](https://www.kaggle.com/datasets/nadimsrabon6/cse475-groupj-dataset)
+
+---
+
 ## ✨ Key Features
 
 - **⚡ High-Throughput Real-Time Inference**:
@@ -197,6 +204,7 @@ While the detection window is focused, you can control the application in real t
 The packaged model (`best_banknote_model.pth`) contains the complete configuration and calibrated weights:
 
 - **Backbone**: `mobilenetv3_large_100` ([timm](https://github.com/huggingface/pytorch-image-models))
+- **Dataset**: [CSE475 Group-J Dataset (Kaggle)](https://www.kaggle.com/datasets/nadimsrabon6/cse475-groupj-dataset)
 - **Parameters / Size**: ~17 MB (compact footprint ideal for mobile and edge distribution)
 - **Input Resolution**: $224 \times 224$ pixels, 3 channels (RGB)
 - **Normalization**: Pre-computed dataset channel means and standard deviations embedded in the checkpoint
