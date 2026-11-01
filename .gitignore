@@ -1,0 +1,70 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Project Captures & Runtime Logs
+# ==========================================
+# Screenshots saved via pressing 's' in realtime_detect.py
+capture_*.jpg
+capture_*.png
+*.log
+
+# ==========================================
+# Jupyter Notebooks & Checkpoints
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# Machine Learning Checkpoints & Weights
+# ==========================================
+# Keep the packaged 17MB model tracked, ignore other temporary weights
+checkpoints/
+runs/
+*.ckpt
+# Uncomment below if you host large weights elsewhere (e.g. GitHub Releases/Drive):
+# *.pth
+# *.pt
+# *.onnx
+# !best_banknote_model.pth
+
+# ==========================================
+# Operating System Files
+# ==========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# IDEs & Code Editors
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
