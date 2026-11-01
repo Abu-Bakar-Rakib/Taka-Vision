@@ -1,0 +1,17 @@
+{
+  "name": "Taka Vision - Bangladeshi Banknote Detector",
+  "short_name": "TakaVision",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "orientation": "portrait-primary",
+  "description": "Real-time AI-powered Bangladeshi currency detection in your mobile browser",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2310b981'/><text x='50%' y='55%' font-size='50' font-weight='bold' text-anchor='middle' dominant-baseline='middle' fill='white'>৳</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

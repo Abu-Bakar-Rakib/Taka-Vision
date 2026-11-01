@@ -1,11 +1,11 @@
 # 🇧🇩 Bangladeshi Banknote Recognition System (BDT)
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Vercel-Ready-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/ONNX_Web-1.18%2B-blue?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX Runtime Web">
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+">
   <img src="https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
   <img src="https://img.shields.io/badge/OpenCV-4.8%2B-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
-  <img src="https://img.shields.io/badge/Architecture-MobileNetV3--Large-brightgreen?style=for-the-badge" alt="MobileNetV3">
-  <img src="https://img.shields.io/badge/Device-CUDA%20%2F%20CPU-success?style=for-the-badge" alt="Device">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
 </p>
 
@@ -220,10 +220,38 @@ BD Note detection/
 ├── .gitignore                 # Git ignore rules for Python, cache, and OS files
 ├── LICENSE                    # MIT open-source license
 ├── README.md                  # Comprehensive project documentation
-├── best_banknote_model.pth    # Pre-trained MobileNetV3 model checkpoint (~17 MB)
-├── realtime_detect.py         # Main real-time OpenCV detection script
-└── requirements.txt           # Project dependencies & library versions
+├── app.js                     # Mobile web app logic & ONNX Runtime Web inference
+├── best_banknote_model.pth    # Pre-trained MobileNetV3 PyTorch checkpoint (~17 MB)
+├── export_onnx.py             # Script to export PyTorch weights to ONNX
+├── index.html                 # Mobile-first responsive web UI for Vercel
+├── manifest.json              # PWA manifest for mobile home-screen install
+├── model.onnx                 # Browser-optimized ONNX model (~16 MB)
+├── realtime_detect.py         # Main desktop real-time OpenCV detection script
+├── requirements.txt           # Python dependencies & library versions
+├── style.css                  # Modern dark-mode UI stylesheet
+└── vercel.json                # Vercel deployment & cache optimization config
 ```
+
+---
+
+## 🌐 Deploy to Vercel (Mobile Version)
+
+You can host this project on **Vercel** with **zero server cost** and run real-time banknote detection directly on your mobile device (Android / iOS):
+
+### How It Works on Mobile:
+- **Client-Side AI**: Powered by [ONNX Runtime Web](https://onnxruntime.ai/), the neural network runs directly inside your phone's browser using WebAssembly / WebGL.
+- **Zero Latency**: No video frames are transmitted to a server. All inference occurs privately and instantly on your device.
+- **Audio Voice Readout**: Automatically speaks the detected denomination aloud (e.g. *"500 Taka"*) using the Web Speech API.
+- **Installable PWA**: Tap **"Add to Home Screen"** on your mobile browser to use it like a native mobile app.
+
+### Deploy Steps:
+
+1. **Push your repository to GitHub** (already configured).
+2. Go to [Vercel Dashboard](https://vercel.com/dashboard) and click **"Add New Project"**.
+3. Import your **`Taka-Vision`** repository.
+4. Keep the Framework Preset as **`Other`** (Root Directory: `./`).
+5. Click **"Deploy"**!
+6. Once deployed, open the provided `.vercel.app` link on your smartphone's camera browser and grant camera permissions.
 
 ---
 
