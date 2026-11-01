@@ -8,3 +8,4 @@ best_banknote_model.pth
 *.pt
 __pycache__/
 *.pyc
+
