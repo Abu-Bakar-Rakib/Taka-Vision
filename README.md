@@ -25,6 +25,7 @@ This project is tailored for:
 - ⚡ **Edge AI Prototyping**: Resource-efficient deployment on embedded devices (laptops, mini PCs, single-board computers).
 
 ---
+<img width="1276" height="592" alt="image" src="https://github.com/user-attachments/assets/ffa65e72-d01f-4076-852b-d48edf1866a0" />
 
 ## 💵 Supported Denominations
 
